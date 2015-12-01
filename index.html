@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 1</title>
+		<link rel="stylesheet" type="text/css" href="Assignment1-styling.css"/>
+		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+		<script type="text/javascript" src="Assignment1-script.js"></script>
+	</head>
+	
+	<body>
+		<div class = 'menu'>
+			<div class = 'values'>
+				<div id='city'></div>
+				<table class='information'>
+					<tr>
+						<td><b>Weather:</b></td>
+						<td><div id='description'></div></td>
+					</tr>
+					<tr>
+						<td><b>Temperature:</b></td>
+						<td><div id='temp'></div></td>
+					</tr>
+				</table>
+				<button id="more_information">Click for more information</button>
+				<table class='more_information'>
+					<tr>
+						<td><b>Wind speed:</b></td>
+						<td><div id='wind_speed'></div></td>
+					</tr>
+					<tr>
+						<td><b>Wind direction:</b></td>
+						<td><div id='wind_direction'></div></td>
+					</tr>
+					<tr>
+						<td><b>Pressure:</b></td>
+						<td><div id='pressure'></div></td>
+					</tr>
+				</table>
+				<div class='input'>
+					<label for="city">City</label>
+					<input type="text" id="weather_city" name="city" /></br>
+					<label for="units">Units</label>
+					<input type="radio" id="units_metric" name="units" value="metric"/> Metric
+					<input type="radio" id="units_imperial" name="units" value="imperial"/> Imperial</br>
+					<button type="submit" id="change">Change</button>
+				</div>
+			</div>
+		</div>
+		<section class='rain'></div>
+	</body>
+</html>
