@@ -26,7 +26,7 @@ var main = function(){
 			
 			$('#pressure').html(data.main.pressure);
 			$('#pressure').append(' hpa');
-			
+
 			var wind_dir = Math.floor(data.wind.deg);
 			if (349 < wind_dir && wind_dir < 360 || 0 < wind_dir && wind_dir < 11) {
 				$('#wind_direction').text('N');
@@ -70,6 +70,9 @@ var main = function(){
 				$('body').css('background-color', '#5D8CC2');
 			} else if (weather === "Rain"){
 				$('.menu').css('background-color', '#A0B0AD');
+				$('body').css('background-color', '#5D8CC2');
+			} else if (weather === "Snow"){
+				$('.menu').css('background-color', 'white');
 				$('body').css('background-color', '#5D8CC2');
 			}
 		});
